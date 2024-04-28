@@ -2,8 +2,8 @@ global loader                   ; the entry symbol for ELF
 extern kmain
 
 MAGIC_NUMBER equ 0x1BADB002     ; define the magic number constant
-FLAGS        equ 0x00000004     ; multiboot flags
-; FLAGS        equ 0x00 ; multiboot flags
+; FLAGS        equ 0x00000004     ; multiboot flags
+FLAGS        equ 0x00 ; multiboot flags
 CHECKSUM     equ -(MAGIC_NUMBER+FLAGS)  ; calculate the checksum
                                 ; (magic number + checksum + flags should equal 0)
 KERNEL_STACK_SIZE equ 4096
